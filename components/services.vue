@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 import { useRouter } from "vue-router";
-import { ServicesCategory } from "~/composables/usestate";
+import { ServicesCategory } from "~/composables/useState";
 
 const router = useRouter();
 const serviceCategory = useServiceCategory();
