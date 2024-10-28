@@ -1,6 +1,5 @@
 <template>
  <Drug />
- <MedicineSection />
  <HowitWorks />
  <WhatToExpect />
 </template>
