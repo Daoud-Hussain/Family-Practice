@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <button class="bg-gradient-to-r from-[#126b62] to-[#47b04b] text-white font-semibold px-8 py-3 rounded-full shadow-md hover:from-green-500 hover:to-green-300 transition duration-200">
+    <button class="bg-gradient-to-r from-[#126b62] to-[#47b04b] text-white font-semibold px-8 py-3 rounded-full shadow-md hover:from-[#47b04b] hover:to-[#126b62] transition duration-200">
       Start assessment
     </button>
   </div>

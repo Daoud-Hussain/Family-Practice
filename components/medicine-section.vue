@@ -20,7 +20,7 @@
     <p class="text-gray-700 mb-6">
       A once-weekly injectable GLP-1 medication. Same active ingredient as Ozempic® and Wegovy®.
     </p>
-      <button class="bg-gradient-to-r from-emerald-700 to-emerald-500 text-white px-6 py-2 rounded-full hover:from-emerald-600 hover:to-emerald-400 transition">
+      <button class="bg-gradient-to-r from-[#126b62] to-[#47b04b] text-white px-6 py-2 rounded-full hover:from-[#47b04b] hover:to-[#126b62] transition">
         Learn More
       </button>
     </div>
@@ -41,7 +41,7 @@
     <p class="text-gray-700 mb-6">
       A once-weekly injectable GLP-1 that is indicated for the treatment of Type 2 Diabetes.*
     </p>
-      <button class="bg-gradient-to-r from-emerald-700 to-emerald-500 text-white px-6 py-2 rounded-full hover:from-emerald-600 hover:to-emerald-400 transition">
+      <button class="bg-gradient-to-r from-[#126b62] to-[#47b04b] text-white px-6 py-2 rounded-full hover:from-emerald-600 hover:from-[#47b04b] hover:to-[#126b62] transition">
         Learn More
       </button>
     </div>
@@ -62,7 +62,7 @@
     <p class="text-gray-700 mb-6">
       A once-weekly injectable GLP-1 indicated for the treatment of overweight and obesity.
     </p>
-      <button class="bg-gradient-to-r from-emerald-700 to-emerald-500 text-white px-6 py-2 rounded-full hover:from-emerald-600 hover:to-emerald-400 transition">
+      <button class="bg-gradient-to-r from-[#126b62] to-[#47b04b] text-white px-6 py-2 rounded-full hover:from-emerald-600 hhover:from-[#47b04b] hover:to-[#126b62] transition">
         Learn More
       </button>
     </div>
