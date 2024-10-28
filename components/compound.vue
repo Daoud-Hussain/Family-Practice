@@ -2,7 +2,7 @@
   <div class="bg-gray-50 py-20">
     <div class="flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto font-sans">
       <!-- Main Content -->
-      <div class="max-w-md space-y-4 max-w-md space-y-4 order-2 md:order-1">
+      <div class="max-w-md space-y-4 max-w-md px-4 md:px-0 pt-4 space-y-4 ">
         <div
           class="w-3/5 bg-yellow-400 text-black font-bold py-1 px-3 rounded text-sm"
         >
