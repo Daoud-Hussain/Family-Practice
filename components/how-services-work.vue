@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-white px-6">
+  <div class="bg-white px-8">
 
   <div class="container mx-auto text-center py-10">
-    <h2 class="text-4xl font-semibold text-gray-900 mb-8">Here's How it works</h2>
+    <h2 class="text-4xl font-semibold text-gray-900 mb-8 mt-12">Here's How it works</h2>
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
       <!-- Step 1 -->
