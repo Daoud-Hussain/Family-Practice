@@ -2,12 +2,14 @@
  <WeightLoss />
  <MedicineSection />
  <HowitWorks />
+ <WhatToExpect />
 </template>
 
 <script setup lang="ts">
 import WeightLoss from '~/components/weight-loss.vue';
 import MedicineSection from '~/components/medicine-section.vue';
 import HowitWorks from '~/components/how-services-work.vue';
+import WhatToExpect from '~/components/what-to-expect.vue';
 
 </script>
 
