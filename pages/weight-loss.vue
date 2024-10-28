@@ -1,9 +1,11 @@
 <template>
  <WeightLoss />
+ <MedicineSection />
 </template>
 
 <script setup lang="ts">
 import WeightLoss from '~/components/weight-loss.vue';
+import MedicineSection from '~/components/medicine-section.vue';
 
 </script>
 
