@@ -8,7 +8,7 @@
     <!-- Options Container -->
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
   <!-- Card 1: Compounded Semaglutide -->
-  <div class="bg-white p-6 rounded-lg shadow-md text-center">
+  <div class="bg-white p-6 rounded-lg shadow-lg text-center ">
     <h3 class="text-xl font-semibold text-gray-900 mb-2">Compounded semaglutide</h3>
     <span class="text-xs font-medium bg-blue-100 text-blue-600 py-1 px-3 rounded-full inline-block mb-4">
       Supply available
@@ -30,7 +30,7 @@
   </div>
 
   <!-- Card 2: Ozempic -->
-  <div class="bg-white p-6 rounded-lg shadow-md text-center">
+  <div class="bg-white p-6 rounded-lg shadow-lg text-center">
     <h3 class="text-xl font-semibold text-gray-900 mb-2">Ozempic®</h3>
     <span class="text-xs font-medium bg-blue-100 text-blue-600 py-1 px-3 rounded-full inline-block mb-4">
       Supply available
@@ -51,7 +51,7 @@
   </div>
 
   <!-- Card 3: Wegovy -->
-  <div class="bg-white p-6 rounded-lg shadow-md text-center">
+  <div class="bg-white p-6 rounded-lg shadow-lg text-center">
     <h3 class="text-xl font-semibold text-gray-900 mb-2">Wegovy®</h3>
     <span class="text-xs font-medium bg-blue-100 text-blue-600 py-1 px-3 rounded-full inline-block mb-4">
       Supply available

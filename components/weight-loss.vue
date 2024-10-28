@@ -22,7 +22,7 @@
           </p>
 
           <button class="bg-gradient-to-r from-[#126b62] to-[#47b04b] text-white px-8 py-3 rounded-full 
-            hover:bg-emerald-700 transition-colors mb-6">
+            hover:bg-emerald-700 transition-colors mb-6 font-semibold">
             Get started
           </button>
 
