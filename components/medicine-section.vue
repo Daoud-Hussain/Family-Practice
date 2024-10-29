@@ -7,7 +7,7 @@
 
     <!-- Options Container -->
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-  <router-link to="/drug" class="bg-white p-6 rounded-lg shadow-lg text-center block">
+  <router-link to="/compound" class="bg-white p-6 rounded-lg shadow-lg text-center block">
         <div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Compounded semaglutide</h3>
           <span class="text-xs font-medium bg-blue-100 text-blue-600 py-1 px-3 rounded-full inline-block mb-4">
@@ -30,7 +30,7 @@
       </router-link>
 
       <!-- Card 2: Ozempic -->
-      <router-link to="/drug" class="bg-white p-6 rounded-lg shadow-lg text-center block">
+      <router-link to="/ozempic" class="bg-white p-6 rounded-lg shadow-lg text-center block">
         <div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Ozempic®</h3>
           <span class="text-xs font-medium bg-blue-100 text-blue-600 py-1 px-3 rounded-full inline-block mb-4">
@@ -53,7 +53,7 @@
       </router-link>
 
       <!-- Card 3: Wegovy -->
-      <router-link to="/drug" class="bg-white p-6 rounded-lg shadow-lg text-center block">
+      <router-link to="/wegovy" class="bg-white p-6 rounded-lg shadow-lg text-center block">
         <div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Wegovy®</h3>
           <span class="text-xs font-medium bg-blue-100 text-blue-600 py-1 px-3 rounded-full inline-block mb-4">
