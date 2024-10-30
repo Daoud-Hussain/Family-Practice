@@ -1,13 +1,13 @@
 <template>
  <AnxietyTreament />
- <MedicineSection />
+ <AnxietyMedication />
  <HowitWorks />
  <WhatToExpect />
 </template>
 
 <script setup lang="ts">
 import AnxietyTreament from '~/components/anxiety-treatment.vue';
-import MedicineSection from '~/components/medicine-section.vue';
+import AnxietyMedication from '~/components/anxiety-medication.vue';
 import HowitWorks from '~/components/how-services-work.vue';
 import WhatToExpect from '~/components/what-to-expect.vue';
 
