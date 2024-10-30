@@ -1,7 +1,7 @@
 <template>
   <div 
     class="group relative bg-white rounded-xl p-6 hover:shadow-md transition-shadow 
-           duration-200 cursor-pointer border border-gray-100"
+           duration-200 cursor-pointer border border-gray-100 hover:bg-red-200"
     @click="$emit('click')"
   >
     <div class="flex justify-between items-start">
