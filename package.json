@@ -13,6 +13,7 @@
     "@nuxt/ui": "^0.4.1",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "gsap": "^3.12.5",
+    "lucide-vue-next": "^0.454.0",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"
