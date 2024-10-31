@@ -1,10 +1,10 @@
-<template class="bg-white">
+<template>
   <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <h1 class="text-3xl px-4 md:px-16 text-black md:text-4xl font-semibold text-forest-900 mb-6">
+    <h1 class="text-3xl px-4 md:px-16 text-white md:text-4xl font-semibold text-forest-900 mb-6">
       Our anti-anxiety medications
     </h1>
 
-    <p class="text-gray-700 px-4 md:px-16 text-lg mb-8">
+    <p class="text-gray-300 px-4 md:px-16 text-lg mb-8">
       We also offer Celexa (citalopram), Cymbalta (Duloxetine), Effexor (venlafaxine), 
       and Paxil (paroxetine). We don't prescribe benzodiazepines like Xanax, Ativan, 
       Valium, and Klonopin.

@@ -17,7 +17,7 @@
         <h2
           class="text-4xl text-center lg:text-start font-semibold mb-4 text-gray-900 pb-6"
         >
-          What to expect with Lemonaid
+          What to expect with Integrity Family Practice
         </h2>
 
         <ul class="space-y-6">
