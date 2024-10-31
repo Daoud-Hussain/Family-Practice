@@ -36,7 +36,7 @@ const services = [
   {
     id: 2,
     title: "Erectile Dysfunction",
-    category: "Men’s Health",
+    category: "Men's Health",
     status: "Popular",
     description: "Solutions for erectile dysfunction.",
     route: "/weight-loss",
@@ -47,7 +47,7 @@ const services = [
     category: "Mental Health",
     status: "Popular",
     description: "Help managing anxiety.",
-    route: "/weight-loss",
+    route: "/anxiety",
   },
   {
     id: 4,
