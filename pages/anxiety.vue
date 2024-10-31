@@ -1,14 +1,16 @@
-<template>
+<template class="bg-white">
  <AnxietyTreament />
  <AnxietyMedication />
- <HowitWorks />
+ <TreatmentSteps />
+ <FAQS />
  <WhatToExpect />
 </template>
 
 <script setup lang="ts">
 import AnxietyTreament from '~/components/anxiety-treatment.vue';
 import AnxietyMedication from '~/components/anxiety-medication.vue';
-import HowitWorks from '~/components/how-services-work.vue';
+import TreatmentSteps from '~/components/treatment-steps.vue';
+import FAQS from '~/components/faqs.vue';
 import WhatToExpect from '~/components/what-to-expect.vue';
 
 </script>
