@@ -23,7 +23,7 @@ import Footer from '~/components/footer.vue';
 import feelingsIcon from '../assets/feelings.png'
 import DoctorIcon from '../assets/doctor.png'
 import DeliveryIcon from '../assets/delivery2.png'
-import CymbaltaIcon from '../assets/clexa.png'; 
+import CymbaltaIcon from '../assets/cymbalta-.png'; 
 
 
 import FaqSection from '~/components/faq-section.vue'
