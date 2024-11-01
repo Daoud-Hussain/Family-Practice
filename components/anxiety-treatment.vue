@@ -1,22 +1,22 @@
 <template>
   <section
     ref="container"
-    class="hero-section flex flex-col lg:flex-col justify-around items-center pb-4"
+    class="hero-section flex flex-col lg:flex-col justify-around items-center pb-10"
   > 
     <div class="main-container flex flex-col lg:flex-row justify-around items-center py-16 lg:pt-16">
     
-    <div
-      class="right-content w-5/6 md:w-3/5 lg:w-2/5 mt-10 lg:mt-0 lg:px-6 relative"
-    >
-      <img src="~/assets/anxiety.png" alt="Anxiety Image" class="w-auto" />
-    </div>
+    <div class="right-content-wrapper">
+  <div class="background-overlay"></div>
+  <img src="~/assets/anxiety.png" alt="Anxiety Image" class="anxiety-image" />
+</div>
+
     
     <div
       class="left-content flex flex-col items-center lg:items-start justify-center text-center lg:text-left w-full lg:w-1/2 px-6"
     >
       
       <h1
-        class="text-3xl lg:text-4xl font-semibold leading-tight text-heroo-color mb-4"
+        class="text-3xl pt-8 md:pt-0 lg:text-4xl font-bold leading-tight text-heroo-color mb-4"
       >
         Online anxiety treatment
       </h1>
@@ -34,7 +34,7 @@
 
   </div>
   
-  <p class="para pb-4">
+  <p class="para">
   If you're having a psychiatric emergency, call 911 or go to the nearest emergency room. 
   You can also call the National Suicide Prevention Hotline 1-800-273-8255 or text “home” to 741-741.</p>
   
@@ -84,17 +84,39 @@ onMounted(() => {
 <style scoped>
 .hero-section {
   background-color: #f5f5f5;
+  padding-top: 40px;
 }
 
 .left-content {
   max-width: 500px;
 }
 
-.right-content {
+.right-content-wrapper {
+  position: relative;
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.background-overlay {
+  position: absolute;
+  top: -40px;
+  left: -40px; /* Adjust to control how much it extends left */
+  width: 100%;
+  height: 100%;
+  background-color: #ffe4e6; /* pinkish background */
+  padding: 20px;
+  z-index: 0;
+}
+
+.anxiety-image {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+}
+
+
 
 .custom-para{
   background-color: rgb(254 202 202);

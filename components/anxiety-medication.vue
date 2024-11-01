@@ -1,5 +1,6 @@
-<template>
-  <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<template class="bg-black">
+  <div class="bg-black">
+  <div class="bg-black max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <h1 class="text-3xl px-4 md:px-16 text-white md:text-4xl font-semibold text-forest-900 mb-6">
       Our anti-anxiety medications
     </h1>
@@ -18,6 +19,7 @@
         :medication="medication"
         @click="navigateToMedication(medication.slug)"
       />
+    </div>
     </div>
   </div>
 </template>
