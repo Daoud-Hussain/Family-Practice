@@ -5,45 +5,45 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Section 1: Links -->
                 <div>
-                    <h3 class="text-gray-800 text-xl font-bold mb-4">Quick Links</h3>
+                    <h3 class="text-white text-xl font-bold mb-4">Quick Links</h3>
                     <ul>
                         <li class="mb-2">
-                            <a href="#" class="hover:text-white transition">Home</a>
+                            <a href="#" class="text-gray-300 hover:text-white transition">Home</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="hover:text-white transition">About Us</a>
+                            <a href="#" class="text-gray-300 hover:text-white transition">About Us</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="hover:text-white transition">Services</a>
+                            <a href="#" class="text-gray-300 hover:text-white transition">Services</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="hover:text-white transition">Contact</a>
+                            <a href="#" class="text-gray-300 hover:text-white transition">Contact</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                            <a href="#" class="text-gray-300 hover:text-white transition">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Section 2: Contact Info -->
                 <div>
-                    <h3 class="text-gray-800 text-xl font-bold mb-4">Contact Us</h3>
+                    <h3 class="text-white text-xl font-bold mb-4">Contact Us</h3>
                     <ul>
-                        <li class="mb-2">
-                            <i class="fas fa-map-marker-alt mr-2"></i>1234 Health St, Suite 100
+                        <li class="mb-2 text-gray-300">
+                            <i class="fas fa-map-marker-alt mr-2 "></i>1234 Health St, Suite 100
                         </li>
-                        <li class="mb-2">
+                        <li class="mb-2 text-gray-300">
                             <i class="fas fa-phone mr-2"></i>(123) 456-7890
                         </li>
-                        <li class="mb-2">
-                            <i class="fas fa-envelope mr-2"></i>info@clinic.com
+                        <li class="mb-2 text-gray-300">
+                            <i class="fas fa-envelope mr-2 "></i>info@clinic.com
                         </li>
                     </ul>
                 </div>
 
                 <!-- Section 3: Contact Form -->
                 <div>
-                    <h3 class="text-gray-800 text-xl font-bold mb-4">Get in Touch</h3>
+                    <h3 class="text-white text-xl font-bold mb-4">Get in Touch</h3>
                     <form @submit.prevent="submitForm">
                         <div class="mb-4">
                             <input v-model="form.name" type="text"
@@ -69,7 +69,7 @@
             </div>
 
             <!-- Footer Bottom: Copyright -->
-            <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
+            <div class="border-t border-gray-700 mt-8 pt-4 text-center text-white text-sm">
                 <p>© 2024 Clinic. All Rights Reserved.</p>
             </div>
         </div>

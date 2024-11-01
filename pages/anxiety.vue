@@ -2,8 +2,9 @@
  <AnxietyTreament />
  <AnxietyMedication />
  <TreatmentSteps />
- <FAQS />
  <WhatToExpect />
+ <FAQS />
+ <Footer />
 </template>
 
 <script setup lang="ts">
@@ -11,6 +12,7 @@ import AnxietyTreament from '~/components/anxiety-treatment.vue';
 import AnxietyMedication from '~/components/anxiety-medication.vue';
 import TreatmentSteps from '~/components/treatment-steps.vue';
 import FAQS from '~/components/faqs.vue';
+import Footer from '~/components/footer.vue';
 import WhatToExpect from '~/components/what-to-expect.vue';
 
 </script>
