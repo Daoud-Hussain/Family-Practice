@@ -6,7 +6,7 @@
     <div
       class="main-container flex flex-col lg:flex-row justify-around items-center py-16 lg:pt-16"
     >
-      <div class="right-content-wrapper">
+      <div class="right-content-wrapper px-4 md:px-0">
         <div class="background-overlay"></div>
         <img
           src="~/assets/anxiety.png"
