@@ -1,8 +1,9 @@
 <template>
   <section class="py-16 bg-sky-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <!-- Use the title prop here -->
       <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-12">
-        Treatment for anxiety in 3 easy steps
+        {{ title }}
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -35,18 +36,17 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import type { PropType } from '@vue/runtime-core'
+
 import { useRouter } from 'vue-router'
-import feelingsIcon from '../assets/feelings.png'
-import DoctorIcon from '../assets/doctor.png'
-import DeliveryIcon from '../assets/delivery.png'
+
+// Define the props
+const props = defineProps<{
+  title: string,
+  steps: Array<{ iconUrl: string, title: string, description: string }>
+}>()
 
 const router = useRouter()
-
-const steps = ref([
-  { iconUrl: feelingsIcon, title: 'Let us know how you\'ve been feeling', description: 'We want to understand your experience so we can provide the best treatment.' },
-  { iconUrl: DoctorIcon, title: 'Talk with an experienced doctor or nurse practitioner', description: 'Learn about anxiety treatment options from our supportive medical team.' },
-  { iconUrl: DeliveryIcon, title: 'FDA-approved meds for anxiety delivered to your door', description: 'The medicine arrives in 2-3 days after your visit is completed.' }
-])
 
 const handleImageError = (index: number) => console.error(`Failed to load image for step ${index + 1}`)
 const handleGetStarted = () => router.push('/assessment')
