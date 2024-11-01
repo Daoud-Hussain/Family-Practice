@@ -14,10 +14,10 @@
       <h1
         class="text-3xl lg:text-4xl font-semibold leading-tight text-heroo-color mb-4"
       >
-        Lexapro for anxiety and depression
+        Celexa for anxiety and depression
       </h1>
       <p class="text-heroo-color mb-6 text-1.5xl.5">
-        Meet with a member of our medical team online to get Lexapro delivered in 2-3 days. Get meds, monthly visits and unlimited messaging for just $95/month.
+        Meet with a member of our medical team online to get Celexa delivered in 2-3 days. Get meds, monthly visits and unlimited messaging for just $95/month.
       </p>
       <p class="custom-para px-3 py-2 mb-8">$95 $25 for your first month 😊</p>
       <button

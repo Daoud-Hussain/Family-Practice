@@ -27,7 +27,6 @@
       </div>
 
       <button
-            @click="handleGetStarted"
             class="mt-8 bg-green-950 text-white py-2 px-12 font-semibold rounded-full shadow-lg transition-all"
       > Get Started </button>
     </div>
