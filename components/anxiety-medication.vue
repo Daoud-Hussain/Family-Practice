@@ -39,14 +39,14 @@ const medications: Medication[] = [
     genericName: 'Citalopram',
     type: 'Selective Serotonin Reuptake Inhibitor',
     typeAbbreviation: 'SSRI',
-    slug: 'lexapro'
+    slug: 'celexa'
   },
   {
     name: 'Cymbalta ',
     genericName: 'Duloxetine',
     type: 'Selective Serotonin Reuptake Inhibitor',
     typeAbbreviation: 'SSRI',
-    slug: 'zoloft'
+    slug: 'cymbalta'
   },
   {
     name: 'Wellbutrin',
@@ -60,20 +60,20 @@ const medications: Medication[] = [
     genericName: 'Venlafaxine',
     type: 'Serotonin Norepinephrine Reuptake Inhibitor',
     typeAbbreviation: 'SNRI',
-    slug: 'prozac'
+    slug: 'effexor'
   },
   {
     name: 'Paxil ',
     genericName: 'Paroxetine',
     type: 'Serotonin Reuptake Inhibitors',
     typeAbbreviation: 'SSRI',
-    slug: 'prozac'
+    slug: 'paxil'
   }
 ];
 
 const router = useRouter();
 
 const navigateToMedication = (slug: string) => {
-  router.push(`/medications/${slug}`);
+  router.push(`/${slug}`);
 };
 </script>
