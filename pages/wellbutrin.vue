@@ -1,122 +1,123 @@
 <template>
- <Celexa 
-    title="Celexa for anxiety and depression"
-    para="Meet with a member of our medical team online to get Celexa delivered in 2-3 days. Get meds, monthly visits and unlimited messaging for just $95/month."
-    :imgurl="ClexaIcon"
+ <Wellbutrin 
+    title="Wellbutrin for anxiety and depression"
+    para="Get Wellbutrin antidepressant prescribed and delivered to your door with FREE fast shipping after an online consult. $95/month."
+    :imgurl="WellbutrinIcon"
 />
  <TreatmentSteps 
     title="Let’s get you feeling better fast"
     :steps="steps"
   />
   <FaqSection 
-      title="About Celexa" 
+      title="About Wellbutrin" 
       :faqs="faqs"
     />
     <Footer />
 </template>
 
 <script setup lang="ts">
-import Celexa from '~/components/medications-home.vue';
+import Wellbutrin from '~/components/medications-home.vue';
 import TreatmentSteps from '~/components/treatment-steps.vue';
 import HowitWorks from '~/components/how-services-work.vue';
 import Footer from '~/components/footer.vue';
 import feelingsIcon from '../assets/feelings.png'
 import DoctorIcon from '../assets/doctor.png'
 import DeliveryIcon from '../assets/delivery2.png'
-import ClexaIcon from '../assets/clexa.png'; // Add this line for lexapro.png
+import WellbutrinIcon from '../assets/wellbutrin.png'; 
 
 
 import FaqSection from '~/components/faq-section.vue'
 
 const faqs = ref([
   {
-    question: "What is Celexa used for?",
+    question: "What is Wellbutrin and why is it used?",
     answer: `
-      <Strong class="font-semibold">Celexa</strong> (generic name: <Strong class="font-semibold">citalopram</strong>) is a prescription medication classified as a <Strong class="font-semibold">selective serotonin reuptake inhibitor</strong> (SSRI). It is mainly used to treat:
+      <strong class="font-semibold">Wellbutrin</strong> (generic name: <strong class="font-semibold">bupropion</strong>) is a prescription medication primarily used as an antidepressant. It is classified as a <strong class="font-semibold">norepinephrine-dopamine reuptake inhibitor</strong> (NDRI) and is commonly prescribed for:
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Depression</strong> (major depressive disorder)</li>
-        <li><Strong class="font-semibold">Anxiety disorders</strong> (in certain cases, though it’s not FDA-approved specifically for anxiety)</li>
+        <li><strong class="font-semibold">Major depressive disorder (MDD)</strong></li>
+        <li><strong class="font-semibold">Seasonal affective disorder (SAD)</strong></li>
+        <li><strong class="font-semibold">Smoking cessation</strong> (marketed under the brand name <strong class="font-semibold">Zyban</strong>)</li>
       </ul>
     `,
   },
   {
-    question: "How does Celexa work?",
+    question: "How does Wellbutrin work?",
     answer: `
-      Celexa increases <Strong class="font-semibold">serotonin levels</strong> in the brain, a neurotransmitter that regulates mood and emotional well-being. By blocking the reabsorption of serotonin, Celexa helps <Strong class="font-semibold">improve mood</strong> and <Strong class="font-semibold">relieve symptoms of depression</strong>.
+      Wellbutrin works by increasing the levels of <strong class="font-semibold">norepinephrine</strong> and <strong class="font-semibold">dopamine</strong> in the brain. Unlike many other antidepressants, it does not primarily affect <strong class="font-semibold">serotonin</strong> levels. This unique mechanism can help improve mood and alleviate symptoms of depression.
     `,
   },
   {
-    question: "How long does it take for Celexa to start working?",
+    question: "How long does it take for Wellbutrin to start working?",
     answer: `
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Initial Effects</strong>: Some patients may see improvements in <Strong class="font-semibold">sleep</strong>, <Strong class="font-semibold">energy</strong>, or <Strong class="font-semibold">appetite</strong> within the first 1 to 2 weeks.</li>
-        <li><Strong class="font-semibold">Full Effects</strong>: For mood and anxiety symptoms, full therapeutic benefits generally develop over <Strong class="font-semibold">4 to 6 weeks</strong>. For some, it may take longer to feel the complete effects, especially for chronic conditions.</li>
+        <li><strong class="font-semibold">Initial Effects</strong>: Some individuals may begin to notice improvements in <strong class="font-semibold">mood</strong>, <strong class="font-semibold">energy</strong>, and <strong class="font-semibold">motivation</strong> within 1 to 2 weeks of starting treatment.</li>
+        <li><strong class="font-semibold">Full Effects</strong>: The full therapeutic effects of Wellbutrin usually develop over <strong class="font-semibold">4 to 6 weeks</strong>. For some individuals, especially those with chronic conditions, it may take longer to experience significant improvements.</li>
       </ul>
     `,
   },
   {
-    question: "What are the common side effects of Celexa?",
+    question: "What are the common side effects of Wellbutrin?",
     answer: `
       Common side effects may include:
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Nausea</strong></li>
-        <li><Strong class="font-semibold">Dry mouth</strong></li>
-        <li><Strong class="font-semibold">Drowsiness</strong> or <Strong class="font-semibold">insomnia</strong></li>
-        <li><Strong class="font-semibold">Dizziness</strong></li>
-        <li><Strong class="font-semibold">Increased sweating</strong></li>
-        <li><Strong class="font-semibold">Sexual dysfunction</strong> (e.g., decreased libido or difficulty achieving orgasm)</li>
+        <li><strong class="font-semibold">Insomnia</strong></li>
+        <li><strong class="font-semibold">Dry mouth</strong></li>
+        <li><strong class="font-semibold">Dizziness</strong></li>
+        <li><strong class="font-semibold">Nausea</strong></li>
+        <li><strong class="font-semibold">Increased sweating</strong></li>
+        <li><strong class="font-semibold">Anxiety or agitation</strong></li>
+        <li><strong class="font-semibold">Tremors</strong></li>
+        <li><strong class="font-semibold">Sexual dysfunction</strong> (e.g., increased libido, but in some cases, difficulties with arousal)</li>
       </ul>
     `,
   },
   {
-    question: "Can Celexa cause weight gain?",
+    question: "Does Wellbutrin cause weight gain?",
     answer: `
-      <Strong class="font-semibold">Potential for Weight Gain</strong>: Weight gain can occur in some individuals on Celexa, though not everyone experiences this side effect.
+      <strong class="font-semibold">Weight Impact</strong>: One of the notable aspects of Wellbutrin is that it is less likely to cause weight gain compared to many other antidepressants. In fact, it may lead to <strong class="font-semibold">weight loss</strong> in some individuals.
       <br>
-      <Strong class="font-semibold">Reasons for Weight Gain</strong>:
+      <strong class="font-semibold">Reasons for Weight Changes</strong>:
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Increased appetite</strong></li>
-        <li><Strong class="font-semibold">Changes in metabolism</strong></li>
-        <li><Strong class="font-semibold">Improved mood</strong>, leading to more regular eating habits</li>
-        <li><Strong class="font-semibold">Lifestyle changes</strong> resulting from improved mental health</li>
+        <li><strong class="font-semibold">Increased energy</strong> and motivation may lead to more physical activity.</li>
+        <li><strong class="font-semibold">Changes in appetite</strong>, which can vary between individuals.</li>
       </ul>
     `,
   },
   {
-    question: "How can I manage my weight while taking Celexa?",
+    question: "How can I manage my weight while taking Wellbutrin?",
     answer: `
       Strategies for weight management include:
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Healthy Eating</strong>: Focus on a diet rich in <Strong class="font-semibold">fruits</strong>, <Strong class="font-semibold">vegetables</strong>, <Strong class="font-semibold">whole grains</strong>, and <Strong class="font-semibold">lean proteins</strong>.</li>
-        <li><Strong class="font-semibold">Regular Exercise</strong>: Physical activity helps maintain a healthy weight and improves overall well-being.</li>
-        <li><Strong class="font-semibold">Hydration</strong>: Staying hydrated can control appetite and support metabolic functions.</li>
+        <li><strong class="font-semibold">Healthy Eating</strong>: Maintain a balanced diet with plenty of <strong class="font-semibold">fruits</strong>, <strong class="font-semibold">vegetables</strong>, <strong class="font-semibold">lean proteins</strong>, and <strong class="font-semibold">whole grains</strong>.</li>
+        <li><strong class="font-semibold">Regular Exercise</strong>: Engage in regular physical activity to promote overall health and help manage weight.</li>
+        <li><strong class="font-semibold">Monitor Changes</strong>: Keep track of any changes in appetite or weight to discuss with your healthcare provider if needed.</li>
       </ul>
     `,
   },
   {
-    question: "What should I keep in mind while taking Celexa?",
+    question: "What should I keep in mind while taking Wellbutrin?",
     answer: `
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Withdrawal Symptoms</strong>: Stopping Celexa suddenly may lead to withdrawal symptoms; it’s essential to <Strong class="font-semibold">taper off</strong> under medical supervision.</li>
-        <li><Strong class="font-semibold">Drug Interactions</strong>: Inform your healthcare provider about any <Strong class="font-semibold">medications</strong> or <Strong class="font-semibold">supplements</strong> to prevent potential interactions.</li>
-        <li><Strong class="font-semibold">Risk of Suicidal Thoughts</strong>: Like other SSRIs, Celexa may increase the risk of <Strong class="font-semibold">suicidal thoughts</strong>, especially in younger individuals, during the early treatment phase.</li>
+        <li><strong class="font-semibold">Risk of Seizures</strong>: Wellbutrin is associated with a higher risk of seizures, especially at higher doses or in individuals with a history of seizures or eating disorders.</li>
+        <li><strong class="font-semibold">Withdrawal Symptoms</strong>: Discontinuing Wellbutrin suddenly can lead to withdrawal symptoms, so it's important to taper off under medical supervision.</li>
+        <li><strong class="font-semibold">Interactions</strong>: Inform your healthcare provider about all <strong class="font-semibold">medications</strong> and <strong class="font-semibold">supplements</strong> you are taking to avoid potential interactions.</li>
+        <li><strong class="font-semibold">Suicidal Thoughts</strong>: As with other antidepressants, Wellbutrin may increase the risk of <strong class="font-semibold">suicidal thoughts</strong>, particularly in younger individuals during the initial treatment phase.</li>
       </ul>
     `,
   },
   {
-    question: "How should Celexa be taken?",
+    question: "How should Wellbutrin be taken?",
     answer: `
-      <Strong class="font-semibold">Typical Dosage</strong>: Celexa is usually taken <Strong class="font-semibold">once daily</strong>, with or without food.
-      <br>
-      <Strong class="font-semibold">Starting Dose</strong>: The standard starting dose for adults is <Strong class="font-semibold">20 mg per day</strong>, and it may be adjusted based on the individual’s response and tolerance.
+      Wellbutrin is typically taken in divided doses, either <strong class="font-semibold">once or twice daily</strong>, depending on the formulation (immediate-release, sustained-release, or extended-release). The starting dose is usually <strong class="font-semibold">150 mg per day</strong>, which may be adjusted based on individual response and tolerance.
     `,
   },
 ]);
 
+
 const steps = [
   { iconUrl: feelingsIcon, title: 'Help us understand your unique situation', description: 'We care about how you feel and want to get you the anxiety and depression help you need.' },
   { iconUrl: DoctorIcon, title: 'Connect with our caring doctors and nurse practitioners to discuss treatment options', description: 'Our medical team works with you to design a treatment plan that’s right for you.' },
-  { iconUrl: DeliveryIcon, title: 'FDA-approved meds delivered directly to you in 2-3 days', description: 'Integrity Family practice’s online pharmacy ships Celexa or another antidepressant right to your door.' }
+  { iconUrl: DeliveryIcon, title: 'FDA-approved meds delivered directly to you in 2-3 days', description: 'Integrity Family practice’s online pharmacy ships Wellbutrin or another antidepressant right to your door.' }
 ]
 
 </script>

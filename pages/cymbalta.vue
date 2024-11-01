@@ -1,122 +1,125 @@
 <template>
- <Celexa 
-    title="Celexa for anxiety and depression"
-    para="Meet with a member of our medical team online to get Celexa delivered in 2-3 days. Get meds, monthly visits and unlimited messaging for just $95/month."
-    :imgurl="ClexaIcon"
+ <Cymbalta 
+    title="Cymbalta for anxiety and depression"
+    para="We’re here to help. Connect with our doctors or nurse practitioners today and the Lemonaid online pharmacy will deliver Zoloft to your door in 2-3 days."
+    :imgurl="CymbaltaIcon"
 />
  <TreatmentSteps 
     title="Let’s get you feeling better fast"
     :steps="steps"
   />
   <FaqSection 
-      title="About Celexa" 
+      title="About Cymbalta" 
       :faqs="faqs"
     />
     <Footer />
 </template>
 
 <script setup lang="ts">
-import Celexa from '~/components/medications-home.vue';
+import Cymbalta from '~/components/medications-home.vue';
 import TreatmentSteps from '~/components/treatment-steps.vue';
 import HowitWorks from '~/components/how-services-work.vue';
 import Footer from '~/components/footer.vue';
 import feelingsIcon from '../assets/feelings.png'
 import DoctorIcon from '../assets/doctor.png'
 import DeliveryIcon from '../assets/delivery2.png'
-import ClexaIcon from '../assets/clexa.png'; // Add this line for lexapro.png
+import CymbaltaIcon from '../assets/clexa.png'; 
 
 
 import FaqSection from '~/components/faq-section.vue'
 
 const faqs = ref([
   {
-    question: "What is Celexa used for?",
+    question: "What is Cymbalta and why is it used?",
     answer: `
-      <Strong class="font-semibold">Celexa</strong> (generic name: <Strong class="font-semibold">citalopram</strong>) is a prescription medication classified as a <Strong class="font-semibold">selective serotonin reuptake inhibitor</strong> (SSRI). It is mainly used to treat:
+      <strong class="font-semibold">Cymbalta</strong> (generic name: <strong class="font-semibold">duloxetine</strong>) is a prescription medication classified as a <strong class="font-semibold">serotonin-norepinephrine reuptake inhibitor</strong> (SNRI). It is primarily used to treat:
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Depression</strong> (major depressive disorder)</li>
-        <li><Strong class="font-semibold">Anxiety disorders</strong> (in certain cases, though it’s not FDA-approved specifically for anxiety)</li>
+        <li><strong class="font-semibold">Major depressive disorder</strong></li>
+        <li><strong class="font-semibold">Generalized anxiety disorder (GAD)</strong></li>
+        <li><strong class="font-semibold">Diabetic peripheral neuropathic pain</strong></li>
+        <li><strong class="font-semibold">Fibromyalgia</strong></li>
+        <li><strong class="font-semibold">Chronic musculoskeletal pain</strong></li>
       </ul>
     `,
   },
   {
-    question: "How does Celexa work?",
+    question: "How does Cymbalta work?",
     answer: `
-      Celexa increases <Strong class="font-semibold">serotonin levels</strong> in the brain, a neurotransmitter that regulates mood and emotional well-being. By blocking the reabsorption of serotonin, Celexa helps <Strong class="font-semibold">improve mood</strong> and <Strong class="font-semibold">relieve symptoms of depression</strong>.
+      Cymbalta works by increasing the levels of two neurotransmitters in the brain, <strong class="font-semibold">serotonin</strong> and <strong class="font-semibold">norepinephrine</strong>. This helps regulate mood, alleviate anxiety, and relieve pain associated with certain conditions.
     `,
   },
   {
-    question: "How long does it take for Celexa to start working?",
+    question: "How long does it take for Cymbalta to start working?",
     answer: `
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Initial Effects</strong>: Some patients may see improvements in <Strong class="font-semibold">sleep</strong>, <Strong class="font-semibold">energy</strong>, or <Strong class="font-semibold">appetite</strong> within the first 1 to 2 weeks.</li>
-        <li><Strong class="font-semibold">Full Effects</strong>: For mood and anxiety symptoms, full therapeutic benefits generally develop over <Strong class="font-semibold">4 to 6 weeks</strong>. For some, it may take longer to feel the complete effects, especially for chronic conditions.</li>
+        <li><strong class="font-semibold">Initial Effects</strong>: Some individuals may begin to notice improvements in mood or anxiety symptoms within 1 to 2 weeks of starting treatment.</li>
+        <li><strong class="font-semibold">Full Effects</strong>: The full therapeutic benefits of Cymbalta typically take 4 to 6 weeks to develop. For conditions like chronic pain, it may take longer to see significant improvements.</li>
       </ul>
     `,
   },
   {
-    question: "What are the common side effects of Celexa?",
+    question: "What are the common side effects of Cymbalta?",
     answer: `
       Common side effects may include:
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Nausea</strong></li>
-        <li><Strong class="font-semibold">Dry mouth</strong></li>
-        <li><Strong class="font-semibold">Drowsiness</strong> or <Strong class="font-semibold">insomnia</strong></li>
-        <li><Strong class="font-semibold">Dizziness</strong></li>
-        <li><Strong class="font-semibold">Increased sweating</strong></li>
-        <li><Strong class="font-semibold">Sexual dysfunction</strong> (e.g., decreased libido or difficulty achieving orgasm)</li>
+        <li><strong class="font-semibold">Nausea</strong></li>
+        <li><strong class="font-semibold">Dry mouth</strong></li>
+        <li><strong class="font-semibold">Drowsiness or insomnia</strong></li>
+        <li><strong class="font-semibold">Dizziness</strong></li>
+        <li><strong class="font-semibold">Constipation</strong></li>
+        <li><strong class="font-semibold">Increased sweating</strong></li>
+        <li><strong class="font-semibold">Sexual dysfunction</strong> (e.g., decreased libido)</li>
       </ul>
     `,
   },
   {
-    question: "Can Celexa cause weight gain?",
+    question: "Can Cymbalta cause weight gain?",
     answer: `
-      <Strong class="font-semibold">Potential for Weight Gain</strong>: Weight gain can occur in some individuals on Celexa, though not everyone experiences this side effect.
+      <strong class="font-semibold">Potential for Weight Gain</strong>: While weight gain is not as commonly associated with Cymbalta compared to some other antidepressants, it can still occur in some individuals.
       <br>
-      <Strong class="font-semibold">Reasons for Weight Gain</strong>:
+      <strong class="font-semibold">Reasons for Weight Gain</strong>:
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Increased appetite</strong></li>
-        <li><Strong class="font-semibold">Changes in metabolism</strong></li>
-        <li><Strong class="font-semibold">Improved mood</strong>, leading to more regular eating habits</li>
-        <li><Strong class="font-semibold">Lifestyle changes</strong> resulting from improved mental health</li>
+        <li><strong class="font-semibold">Changes in appetite</strong></li>
+        <li><strong class="font-semibold">Improved mood leading to more regular eating patterns</strong></li>
+        <li><strong class="font-semibold">Lifestyle changes due to reduced pain or anxiety</strong></li>
+        <li><strong class="font-semibold">Individual differences in metabolism</strong></li>
       </ul>
     `,
   },
   {
-    question: "How can I manage my weight while taking Celexa?",
+    question: "How can I manage my weight while taking Cymbalta?",
     answer: `
       Strategies for weight management include:
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Healthy Eating</strong>: Focus on a diet rich in <Strong class="font-semibold">fruits</strong>, <Strong class="font-semibold">vegetables</strong>, <Strong class="font-semibold">whole grains</strong>, and <Strong class="font-semibold">lean proteins</strong>.</li>
-        <li><Strong class="font-semibold">Regular Exercise</strong>: Physical activity helps maintain a healthy weight and improves overall well-being.</li>
-        <li><Strong class="font-semibold">Hydration</strong>: Staying hydrated can control appetite and support metabolic functions.</li>
+        <li><strong class="font-semibold">Healthy Eating</strong>: Focus on a balanced diet rich in <strong class="font-semibold">fruits</strong>, <strong class="font-semibold">vegetables</strong>, <strong class="font-semibold">lean proteins</strong>, and <strong class="font-semibold">whole grains</strong> to help manage weight.</li>
+        <li><strong class="font-semibold">Regular Exercise</strong>: Incorporate physical activity into your routine to maintain a healthy weight and improve overall well-being.</li>
+        <li><strong class="font-semibold">Hydration</strong>: Drink plenty of water to help control appetite and support metabolic processes.</li>
       </ul>
     `,
   },
   {
-    question: "What should I keep in mind while taking Celexa?",
+    question: "What should I keep in mind while taking Cymbalta?",
     answer: `
       <ul class="list-disc ml-6">
-        <li><Strong class="font-semibold">Withdrawal Symptoms</strong>: Stopping Celexa suddenly may lead to withdrawal symptoms; it’s essential to <Strong class="font-semibold">taper off</strong> under medical supervision.</li>
-        <li><Strong class="font-semibold">Drug Interactions</strong>: Inform your healthcare provider about any <Strong class="font-semibold">medications</strong> or <Strong class="font-semibold">supplements</strong> to prevent potential interactions.</li>
-        <li><Strong class="font-semibold">Risk of Suicidal Thoughts</strong>: Like other SSRIs, Celexa may increase the risk of <Strong class="font-semibold">suicidal thoughts</strong>, especially in younger individuals, during the early treatment phase.</li>
+        <li><strong class="font-semibold">Withdrawal Symptoms</strong>: Stopping Cymbalta suddenly can lead to withdrawal symptoms, so it’s essential to taper off the medication under the guidance of a healthcare provider.</li>
+        <li><strong class="font-semibold">Interactions</strong>: Inform your doctor about all medications and supplements you are taking to avoid potential interactions.</li>
+        <li><strong class="font-semibold">Suicidal Thoughts</strong>: As with other antidepressants, Cymbalta may increase the risk of suicidal thoughts, particularly in younger individuals during the initial treatment period.</li>
       </ul>
     `,
   },
   {
-    question: "How should Celexa be taken?",
+    question: "How should Cymbalta be taken?",
     answer: `
-      <Strong class="font-semibold">Typical Dosage</strong>: Celexa is usually taken <Strong class="font-semibold">once daily</strong>, with or without food.
-      <br>
-      <Strong class="font-semibold">Starting Dose</strong>: The standard starting dose for adults is <Strong class="font-semibold">20 mg per day</strong>, and it may be adjusted based on the individual’s response and tolerance.
+      <strong class="font-semibold">Dosage and Administration</strong>: Cymbalta is typically taken <strong class="font-semibold">once daily</strong>, with or without food. The usual starting dose for major depressive disorder or GAD is <strong class="font-semibold">30 mg to 60 mg per day</strong>, which may be adjusted based on individual response and tolerance.
     `,
   },
 ]);
 
+
 const steps = [
   { iconUrl: feelingsIcon, title: 'Help us understand your unique situation', description: 'We care about how you feel and want to get you the anxiety and depression help you need.' },
   { iconUrl: DoctorIcon, title: 'Connect with our caring doctors and nurse practitioners to discuss treatment options', description: 'Our medical team works with you to design a treatment plan that’s right for you.' },
-  { iconUrl: DeliveryIcon, title: 'FDA-approved meds delivered directly to you in 2-3 days', description: 'Integrity Family practice’s online pharmacy ships Celexa or another antidepressant right to your door.' }
+  { iconUrl: DeliveryIcon, title: 'FDA-approved meds delivered directly to you in 2-3 days', description: 'Integrity Family practice’s online pharmacy ships Cymbalta or another antidepressant right to your door.' }
 ]
 
 </script>
