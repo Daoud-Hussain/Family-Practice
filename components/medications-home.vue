@@ -14,11 +14,11 @@
       <h1
         class="text-3xl lg:text-4xl font-semibold leading-tight text-heroo-color mb-4"
       >
-        Celexa for anxiety and depression
+        {{ title }}
       </h1>
       <p class="text-heroo-color mb-6 text-1.5xl.5">
-        Meet with a member of our medical team online to get Celexa delivered in 2-3 days. Get meds, monthly visits and unlimited messaging for just $95/month.
-      </p>
+        {{ para }}
+        </p>
       <p class="custom-para px-3 py-2 mb-8">$95 $25 for your first month 😊</p>
       <button
         class="bg-green-950 text-white py-2 px-12 font-semibold rounded-full shadow-lg hover:from-[#47b04b] hover:to-[#126b62] transition-all"
@@ -30,7 +30,7 @@
     <div
       class="right-content w-5/6 md:w-3/5 lg:w-2/5 mt-10 lg:mt-0 lg:px-6 relative"
     >
-      <img src="~/assets/lexapro.png" alt="Anxiety Image" class="w-auto" />
+      <img :src="imgurl" alt="Anxiety Image" class="w-auto" />
     </div>
 
   </div>
@@ -43,8 +43,26 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref } from 'vue'
+import type { PropType } from '@vue/runtime-core'
 import gsap from "gsap";
+
+const props = defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  para: {
+    type: String,
+    required: true,
+  },
+  imgurl: {
+    type: String,
+    required: true,
+  },
+});
+
+
 
 const container = ref(null);
 
