@@ -1,11 +1,11 @@
 <template>
-    <div class=" min-h-screen">
-      <div class="container mx-auto px-4 py-12">
-        <h1 class="text-3xl font-bold text-gray-800 mb-8 items-center text-center">Our Services</h1>
+    <section class="bg-white ">
+      <div class="container mx-auto px-4  py-12">
+        <h1 class="text-3xl font-semibold text-black mb-8 items-center text-center">Our Services</h1>
         <ServiceSelectionTabs @scrollLeft="scrollLeft" @scrollRight="scrollRight" />
         <ServiceCarousel ref="carouselRef" />
       </div>
-    </div>
+    </section>
   </template>
 
 <script setup lang="ts">
