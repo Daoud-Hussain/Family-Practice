@@ -1,6 +1,6 @@
 <template>
   <section class="bg-gray-950 text-center py-12">
-    <h1 class="text-4xl text-white font-semibold mb-8">What can we help you with today?</h1>
+    <h1 class="text-4xl text-white font-semibold px-7 md:px-0 mb-8">What can we help you with today?</h1>
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap justify-center gap-4">
         <ServiceCard
