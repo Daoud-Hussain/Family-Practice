@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-gray-100 p-4">
     <div class="max-w-7xl mx-auto">
       <!-- Header -->
-      <header class="flex items-center justify-between p-6 bg-secondary">
+      <header class="flex items-center justify-between p-6">
         <h1 class="text-2xl font-bold text-gray-800">Blogs Dashboard</h1>
         <div class="flex items-center space-x-4">
           <div class="text-sm">
@@ -15,9 +15,9 @@
 
       <!-- Main Content -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div class="lg:col-end-1	 bg-white p-6 shadow-lg rounded-lg">
+        <div class="lg:col-span-2 bg-white p-6 shadow-lg rounded-lg">
           <h2 class="text-xl font-semibold mb-4 text-gray-800">Write New Blog</h2>
-          <form @submit.prevent="submitNewBlog">
+          <form >
             <div class="mb-4">
               <label class="block text-gray-700 font-semibold mb-2" for="title">Title</label>
               <input

@@ -24,15 +24,21 @@
         </div>
       </div>
       <button
-            @click="handleGetStarted"
-            class="mt-8 bg-green-950 text-white py-2 px-12 font-semibold rounded-full shadow-lg transition-all"
-      > Get Started </button>
+        class="mt-8 bg-green-950 text-white py-2 px-12 font-semibold rounded-full shadow-lg transition-all"
+        @click="handleGetStarted"
+      >
+        Get Started
+      </button>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
 import { reactive } from 'vue'
+
+const handleGetStarted = () => {
+  window.location.href = 'https://form.jotform.com/243045844620150'
+}
 
 const faqs = reactive([
   { 
