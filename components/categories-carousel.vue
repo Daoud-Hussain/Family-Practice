@@ -8,7 +8,7 @@
                     <div class="relative text-gray-800">
                         <img class="w-full h-48 object-cover rounded-lg" :src="service.image" :alt="service.category" />
                         <div class="absolute top-2 left-2 flex space-x-2">
-                            <div v-if="service.new" class="bg-yellow-400 px-2 py-1 rounded-full text-xs font-semibold text-yellow-900">
+                            <div v-if="service.new" class="bg-green-400 text-black px-2 py-2 rounded-full text-xs font-semibold">
                                 New
                             </div>
                             <div class="bg-white text-gray-800 bg-opacity-75 px-2 py-1 rounded-full">
