@@ -5,13 +5,13 @@
                 class="flex space-x-6 overflow-x-auto scrollbar-hide scroll-smooth pb-4">
                 <div v-for="service in getSelectedServices()" :key="service.image"
                     class="flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4 transition-all duration-300 ease-in-out">
-                    <div class="relative">
+                    <div class="relative text-gray-800">
                         <img class="w-full h-48 object-cover rounded-lg" :src="service.image" :alt="service.category" />
                         <div class="absolute top-2 left-2 flex space-x-2">
                             <div v-if="service.new" class="bg-yellow-400 px-2 py-1 rounded-full text-xs font-semibold text-yellow-900">
                                 New
                             </div>
-                            <div class="bg-white bg-opacity-75 px-2 py-1 rounded-full">
+                            <div class="bg-white text-gray-800 bg-opacity-75 px-2 py-1 rounded-full">
                                 <span class="text-xs font-medium text-gray-800">{{ service.category }}</span>
                             </div>
                         </div>
