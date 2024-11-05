@@ -1,5 +1,5 @@
 <template>
-    <div class="card-container  p-4 w-full sm:w-1/2 lg:w-1/3" @click="$emit('click')">
+   <div class="card-container p-4 w-full sm:w-1/2 lg:w-1/3" @click="$emit('click')">
         <div class="card bg-gray-800 hover:shadow-md hover:shadow-gray-600  rounded-lg p-6 space-y-4 cursor-pointer">
             <!-- Tag section -->
             <div class="tags flex items-center space-x-2">
