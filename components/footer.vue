@@ -61,7 +61,7 @@
                                 rows="4" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit"
-                            class="bg-custom-teal text-white py-3 px-6 rounded hover:bg-green-600 transition">
+                            class="bg-gradient-to-r from-[#47b04b] to-[#126b62] text-white py-3 px-6 rounded hover:from-[#126b62] hover:to-[#47b04b] transition">
                             Send Message
                         </button>
                     </form>

@@ -30,6 +30,7 @@
         <p class="custom-para px-3 py-2 mb-8">$95 $25 for your first month</p>
         <button
           class="bg-gradient-to-r from-[#126b62] to-[#47b04b] text-white py-2 px-12 font-semibold rounded-full shadow-lg hover:from-[#47b04b] hover:to-[#126b62] transition-all"
+          @click="handleGetStarted"
         >
           Take the first Step
         </button>
@@ -82,6 +83,11 @@ onMounted(() => {
     });
   });
 });
+
+
+const handleGetStarted = () => {
+  window.location.href = 'https://form.jotform.com/243045844620150'
+}
 </script>
 
 <style scoped>

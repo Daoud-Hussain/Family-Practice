@@ -27,8 +27,11 @@
       </div>
 
       <button
-            class="mt-8 bg-green-950 text-white py-2 px-12 font-semibold rounded-full shadow-lg transition-all"
-      > Get Started </button>
+        class="mt-8 bg-green-950 text-white py-2 px-12 font-semibold rounded-full shadow-lg transition-all"
+        @click="handleGetStarted"
+      >
+        Get Started
+      </button>
     </div>
   </section>
 </template>
@@ -37,16 +40,16 @@
 import { ref } from 'vue'
 import type { PropType } from '@vue/runtime-core'
 
-import { useRouter } from 'vue-router'
-
 // Define the props
 const props = defineProps<{
   title: string,
   steps: Array<{ iconUrl: string, title: string, description: string }>
 }>()
 
-const router = useRouter()
-
 const handleImageError = (index: number) => console.error(`Failed to load image for step ${index + 1}`)
-const handleGetStarted = () => router.push('/assessment')
+
+// Redirects to the JotForm URL when the "Get Started" button is clicked
+const handleGetStarted = () => {
+  window.location.href = 'https://form.jotform.com/243045844620150'
+}
 </script>
