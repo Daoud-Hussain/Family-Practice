@@ -1,7 +1,7 @@
 <template>
     <div class="mb-6">
         <div class="">
-            <div class="flex items-center justify-between max-w-6xl">
+            <div class="flex items-center mx-auto justify-between max-w-7xl">
                 <div role="tablist" class="tabs flex-grow overflow-x-auto scrollbar-hide whitespace-nowrap">
                     <button 
                         v-for="category in serviceCategories" 
