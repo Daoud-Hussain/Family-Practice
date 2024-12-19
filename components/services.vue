@@ -224,4 +224,7 @@ const navigateToService = (service: any) => {
   transform: translateY(4rem);
 }
 </style>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 88a387f08ed5c8c0a1e8469af5b5d575ac5eeafb

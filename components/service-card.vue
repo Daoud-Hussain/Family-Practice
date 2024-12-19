@@ -52,6 +52,13 @@ defineEmits(['click']);
 .card-container {
   max-width: 100%;
   will-change: transform, opacity;
+<<<<<<< HEAD
+}
+
+.card {
+  transition: all 4s ease;
+=======
+>>>>>>> 88a387f08ed5c8c0a1e8469af5b5d575ac5eeafb
 }
 
 .card {

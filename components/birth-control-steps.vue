@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-blue-50 py-20">
+    <div class="bg-blue-50 py-20 px-4 md:px-8">
       <div class="max-w-5xl mx-auto text-center font-sans">
         <h2 class="text-3xl font-semibold mb-16 text-gray-900">How to get birth control online</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
