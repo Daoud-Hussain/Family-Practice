@@ -1,6 +1,7 @@
 <template>
  <FastShippingComponent />
  <BirthControlSteps />
+ <CustomerControl />
  <HowitWorks />
  <WhatToExpect />
  <Footer />
@@ -9,6 +10,7 @@
 <script setup lang="ts">
 import FastShippingComponent from '~/components/fast-shipping.vue';
 import BirthControlSteps from '~/components/birth-control-steps.vue';
+import CustomerControl from '~/components/customer-control.vue';
 import HowitWorks from '~/components/how-services-work.vue';
 import WhatToExpect from '~/components/what-to-expect.vue';
 import Footer from '~/components/footer.vue';

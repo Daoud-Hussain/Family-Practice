@@ -9,11 +9,6 @@
             alt="pill pack"
             class="w-64 h-auto"
           />
-          <div
-            class="absolute top-0 left-8 bg-red-500 text-white rounded-full w-32 h-32 flex items-center justify-center -mt-8 -ml-8"
-          >
-            <span class="text-2xl font-bold">&hearts;</span>
-          </div>
         </div>
       </div>
 
