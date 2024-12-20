@@ -3,7 +3,7 @@
  <BirthControlSteps />
  <CustomerControl />
  <InsuranceInfo />
- <WhatToExpect />
+ <BloodPressureInfo />
  <Footer />
 </template>
 
@@ -12,7 +12,7 @@ import FastShippingComponent from '~/components/fast-shipping.vue';
 import BirthControlSteps from '~/components/birth-control-steps.vue';
 import CustomerControl from '~/components/customer-control.vue';
 import InsuranceInfo from '~/components/insurance-info.vue';
-import WhatToExpect from '~/components/what-to-expect.vue';
+import BloodPressureInfo from '~/components/blood-pressure-info.vue';
 import Footer from '~/components/footer.vue';
 
 </script>
