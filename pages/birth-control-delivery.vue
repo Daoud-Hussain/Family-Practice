@@ -1,4 +1,5 @@
 <template>
+ <BirthControlHome />
  <FastShippingComponent />
  <BirthControlSteps />
  <CustomerControl />
@@ -9,6 +10,7 @@
 
 <script setup lang="ts">
 import FastShippingComponent from '~/components/fast-shipping.vue';
+import BirthControlHome from '~/components/birth-control-home.vue';
 import BirthControlSteps from '~/components/birth-control-steps.vue';
 import CustomerControl from '~/components/customer-control.vue';
 import InsuranceInfo from '~/components/insurance-info.vue';
