@@ -1,12 +1,17 @@
 <template>
     <div class="hero-section">
         <div class="content">
-            <h1>Birth control delivered every year for $65/pack 🌈</h1>
+            <h1>Birth control delivered every year for $65 🌈</h1>
             <div class="offer">
-                <span class="text-green-600">👋 Birth Control prescribed from the comfort of your home! 👋</span>
+                <span class="text-green-600">🙌 Birth Control prescribed from the comfort of your home! 🙌</span>
             </div>
-            <button class="get-started">Get started</button>
-            <p class="footer-text">Are you an existing patient? To
+            <!-- <button class="get-started">Get started</button> -->
+            <button
+          class="bg-green-600 text-white py-2 px-12 font-semibold rounded-full shadow-lg transition-all"
+        >
+          Get started
+        </button>
+            <p class="footer-text">Are you an existing patient? <br /> To
                 renew your birth control click ‘get
                 started</p>
         </div>
