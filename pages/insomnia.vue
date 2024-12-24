@@ -1,6 +1,6 @@
 <template>
     <InsomniaHome />
-    <FastShippingComponent />
+    <InsomniaPrescription />
     <BirthControlSteps />
     <CustomerControl />
     <InsuranceInfo />
@@ -10,7 +10,7 @@
    
    <script setup lang="ts">
    import InsomniaHome from '~/components/insomnia-home.vue';
-   import BirthControlHome from '~/components/birth-control-home.vue';
+   import InsomniaPrescription from '~/components/insomnia-prescription.vue';
    import BirthControlSteps from '~/components/birth-control-steps.vue';
    import CustomerControl from '~/components/customer-control.vue';
    import InsuranceInfo from '~/components/insurance-info.vue';
