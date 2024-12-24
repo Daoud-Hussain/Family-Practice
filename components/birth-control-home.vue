@@ -10,7 +10,7 @@
           </span>
         </div>
         <button
-          class="get-started text-black py-2 px-12 font-semibold rounded-full shadow-lg transition-all animate-bounce"
+          class="bg-gradient-to-r from-[#126b62] to-[#47b04b] text-white font-semibold px-12 py-3 rounded-full shadow-md hover:from-[#47b04b] hover:to-[#126b62] transition-all animate-bounce transition-all animate-bounce"
         >
           Get started
         </button>

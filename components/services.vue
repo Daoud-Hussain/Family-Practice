@@ -113,7 +113,7 @@ const services = [
     category: "Mental Health",
     status: "Popular",
     description: "Help with insomnia.",
-    route: "/weight-loss",
+    route: "/insomnia",
   },
   {
     id: 8,
