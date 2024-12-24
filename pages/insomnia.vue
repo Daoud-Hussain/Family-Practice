@@ -1,20 +1,18 @@
 <template>
     <InsomniaHome />
     <InsomniaPrescription />
-    <BirthControlSteps />
+    <InsomniaSteps />
     <CustomerControl />
-    <InsuranceInfo />
-    <BloodPressureInfo />
+    <InsomniaRestrictions />
     <Footer />
    </template>
    
    <script setup lang="ts">
    import InsomniaHome from '~/components/insomnia-home.vue';
    import InsomniaPrescription from '~/components/insomnia-prescription.vue';
-   import BirthControlSteps from '~/components/birth-control-steps.vue';
+   import InsomniaSteps from '~/components/insomnia-steps.vue';
    import CustomerControl from '~/components/customer-control.vue';
-   import InsuranceInfo from '~/components/insurance-info.vue';
-   import BloodPressureInfo from '~/components/blood-pressure-info.vue';
+   import InsomniaRestrictions from '~/components/insomnia-restrictions.vue';
    import Footer from '~/components/footer.vue';
    
    </script>

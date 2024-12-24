@@ -40,7 +40,7 @@ export default {
         },
         {
           title:
-            "Your Health Care Provider will get back to you within 1 day",
+            "Our Health Care Provider will get back to you within 1 day",
           description:
             "We always enjoy meeting you and learning more about your health.",
         },

@@ -28,11 +28,11 @@
         class="text-lg font-medium text-green-700 mb-4"
         :class="{'fade-in-delay': isVisible}"
       >
-        888-536-2267
+      702-986-1275
       </p>
-      <p class="text-sm text-gray-600" :class="{'fade-in-delay': isVisible}">
-        Integrity Family Practice is a national telehealth company based in San Francisco, CA.
-      </p>
+      <a href="mailto:Integrity@integritymedicalweightloss.com" class="text-sm text-gray-600" :class="{'fade-in-delay': isVisible}">
+        Integrity@integritymedicalweightloss.com
+      </a>
     </div>
   </div>
 </template>
